@@ -1,4 +1,4 @@
-# TakeMeter
+# TakeMeter — Unit 5 Submission
 
 > ### 👋 Start here
 >
@@ -19,7 +19,7 @@
 > Nothing to upload, nothing to connect, no accounts and no keys. The notebook
 > runs on your machine and writes next to your code.
 >
-> **The rest of this file is your submission.** Fill it in as you go.
+> **The rest of this file is your submission.**
 
 ---
 
@@ -39,48 +39,44 @@
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
+TakeMeter is a text classifier for posts from the r/csMajors community. It
+sorts each post into one of three categories: `analysis`, `hot_take`, or
+`reaction`.
 
-
+The dataset is stored in `labels.csv`. It contains 191 posts: 20 were labeled
+by hand first, and 171 were pre-labeled with AI and then audited manually.
 
 ---
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
+### `analysis`
 
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
+**Definition:** Makes a structured, data-backed argument regarding career
+strategy, tech stacks, internships, or coursework. It must cite a specific
+metric, salary figure, course code, GPA threshold, or other verifiable
+statistic.
 
-### `label_one`
+### `hot_take`
 
-**Definition:**
+**Definition:** Makes a bold, broad generalization or opinion about the tech
+industry, recruiting, or degrees with zero supporting evidence.
 
-**Example 1:**
->
+### `reaction`
 
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
+**Definition:** Expresses an immediate emotional outburst, rant, celebration, or
+short personal anecdote, such as passing a class or venting about burnout.
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `analysis` and `reaction`
 
-**The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+**The decision rule I used every time:** If a post includes concrete, checkable
+data points like salary numbers, GPA thresholds, or specific course codes, it
+is classified as `analysis`, even if the tone is emotional, heated, or phrased
+like a rant. A personal emotional vent remains a `reaction` when those details
+only provide context and the post does not develop an argument or career
+analysis.
 
 
 
@@ -88,91 +84,113 @@
 
 ## The Dataset
 
-<!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
+**Where the posts came from:** r/csMajors.
 
-**Where the posts came from:**
-
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** I labeled the first 20 posts by hand. The remaining
+171 posts were pre-labeled with AI and then manually audited and corrected.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `analysis` | 68 | 35.6% |
+| `hot_take` | 71 | 37.2% |
+| `reaction` | 52 | 27.2% |
+| **Total** | **191** | **100%** |
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+
+> *The post:* “I made $120k at my internship but I feel like I learned
+> absolutely nothing and wasted my summer.”
 >
-> *Could have been:*
+> *Could have been:* `reaction` because of its emotional tone.
 >
-> *I chose, because:*
+> *I chose, because:* `analysis` because it cites the concrete salary figure
+> `$120k`, following the data-point rule.
 
 **2.**
-> *The post:*
+
+> *The post:* “SWE is dead, everyone should switch to Trades or Quant
+> immediately.”
 >
-> *Could have been:*
+> *Could have been:* `analysis` if the claim were supported by evidence.
 >
-> *I chose, because:*
+> *I chose, because:* `hot_take` because it is a sweeping industry claim with
+> no supporting facts or data points.
 
 **3.**
-> *The post:*
+
+> *The post:* “Just failed CS2110 midterm after studying 40 hours. I hate this
+> major so much.”
 >
-> *Could have been:*
+> *Could have been:* `analysis` because it contains a course code and study
+> hours.
 >
-> *I chose, because:*
+> *I chose, because:* `reaction` because it is a personal emotional vent with
+> no structured argument or career analysis.
 
 ---
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
+**Base model:** `distilbert-base-uncased`
 
-**Base model:**
+**Settings:** 3 epochs, learning rate `2e-5`, batch size `16`, seed `42`, and
+maximum token length `128`.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Anything I changed from the defaults, and why:** I used the notebook's
+provided training configuration and kept the seed fixed at 42 for the Unit 5
+run so the result is reproducible.
 
-**Anything I changed from the defaults, and why:**
-
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
-
-
+**Split sizes:** 133 training posts, 29 validation posts, and 29 test posts.
+The test split contained 10 `analysis`, 11 `hot_take`, and 8 `reaction` posts.
 
 ---
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
-
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
-
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked Copilot to generate edge-case post scenarios to
+  stress-test the boundary decision rule.
+- *What came back:* It produced examples designed to test the boundaries
+  between analysis, hot takes, and emotional reactions.
+- *What I changed:* I reviewed the examples and refined the decision rule
+  before labeling the dataset.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* I asked Copilot to generate and pre-label the rows after
+  the first 20 in `labels.csv`.
+- *What came back:* It generated candidate posts and assigned one of the three
+  taxonomy labels to each row.
+- *What I changed:* I manually audited the pre-labeled rows against the
+  taxonomy and decision rule, correcting labeling mistakes.
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** The first 20 posts were labeled by hand. The
+AI-assisted rows were not accepted without human review.
+
+---
+
+## Execution Environment
+
+Fine-tuning was executed locally with PyTorch inside the dedicated `.venv`
+virtual environment. The recorded device was Apple Silicon GPU through
+PyTorch MPS, with PyTorch version `2.14.1`.
+
+The Unit 5 run achieved:
+
+| Measure | Result |
+|---|---:|
+| Overall accuracy | 0.724 |
+| Macro F1 | 0.745 |
+| F1 — `analysis` | 0.636 |
+| F1 — `hot_take` | 0.600 |
+| F1 — `reaction` | 1.000 |
+
+The run generated `results.json` and `test_split.csv` in the project folder.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
