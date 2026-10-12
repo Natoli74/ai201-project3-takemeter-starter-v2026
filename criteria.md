@@ -51,65 +51,49 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Overall Accuracy
 
-<!-- Your criterion. It must name a number. -->
+Overall accuracy on the held-out test set is at least 0.70.
 
-
-
-**Why this target:**
-
-
+**Why this target:** A three-class random guesser sits around 33 percent, so
+70 percent shows a real signal.
 
 ---
 
-## 2.
+## 2. Per-Label Macro F1
 
-<!-- Your criterion. -->
+Macro F1 across all classes is at least 0.65.
 
-
-
-**Why this target:**
-
-
+**Why this target:** This ensures performance remains balanced across all three
+categories.
 
 ---
 
-## 3.
+## 3. Minimum Class Performance
 
-<!-- Your criterion. -->
+The smallest class, `reaction`, achieves an F1 score of at least 0.55.
 
-
-
-**Why this target:**
-
-
+**Why this target:** Reaction posts have higher stylistic variance, making them
+harder to isolate.
 
 ---
 
-## 4.
+## 4. Class Balance Cap
 
-<!-- Your criterion. -->
+No single label exceeds 60 percent of the total dataset distribution.
 
-
-
-**Why this target:**
-
-
+**Why this target:** This prevents the model from defaulting to majority-class
+guessing.
 
 ---
 
-## 5.
+## 5. High Confidence Precision
 
-<!-- Your criterion. -->
+Predictions made with a confidence score of 0.85 or higher achieve an accuracy
+of at least 0.80.
 
-
-
-**Why this target:**
-
-
-
----
+**Why this target:** This validates that high model certainty correlates with
+correct classifications.
 
 <!-- ─────────────────────────────────────────────────────────────────────────
      UNIT 6 — read this before you change anything above.
