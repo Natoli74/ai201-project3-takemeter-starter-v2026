@@ -1,0 +1,192 @@
+text,label,note
+"A CS degree builds foundations in algorithms systems and software design",analysis,cold
+"Internships often matter because they provide evidence of applied engineering skills",analysis,cold
+"Operating systems courses explain how processes memory and files interact",analysis,cold
+"Interview preparation is more effective when practice targets weak problem solving areas",analysis,cold
+"Software engineering teams value communication because requirements change during projects",analysis,cold
+"Recruiting outcomes depend on school projects experience timing and networking",analysis,cold
+"Data structures are useful because they connect abstract concepts to performance tradeoffs",analysis,cold
+"Companies frequently screen for fundamentals before evaluating specialized frameworks",hot_take,cold
+"Leetcode should not be treated as the only measure of engineering ability",hot_take,cold
+"College prestige is overrated compared with consistent project work and strong communication",hot_take,cold
+"Most entry level job descriptions ask for far more experience than new graduates can have",hot_take,cold
+"Students should stop chasing every new framework and learn durable concepts instead",hot_take,cold
+"Unpaid internships are usually a poor deal for students who need meaningful experience",hot_take,cold
+"Remote work can make early career learning harder when mentorship is weak",hot_take,cold
+"That interview question was unnecessarily difficult for an entry level role",reaction,cold
+"I cannot believe another recruiter listed five years of experience for a junior position",reaction,cold
+"This semester has been exhausting but the systems project finally makes sense",reaction,cold
+"Seeing a rejection after the final round feels especially frustrating",reaction,cold
+"I am relieved to have accepted an internship before the semester ended",reaction,cold
+"That coding assessment went much better than I expected",reaction,cold
+"Course projects often reveal why theoretical concepts matter in practice",analysis,prelabeled
+"Big O notation helps compare algorithms independently of a particular machine",analysis,prelabeled
+"A portfolio is stronger when each project explains the problem decisions and results",analysis,prelabeled
+"Networking creates opportunities by increasing the number of conversations with potential mentors",analysis,prelabeled
+"Career fairs are more productive when students research companies before speaking with recruiters",analysis,prelabeled
+"An operating systems course can improve debugging by teaching resource and process behavior",analysis,prelabeled
+"Database normalization reduces duplicated data and prevents inconsistent updates",analysis,prelabeled
+"Good resume bullets describe measurable outcomes rather than listing technologies",analysis,prelabeled
+"Group projects teach coordination skills that individual coding assignments rarely develop",analysis,prelabeled
+"Learning Git is valuable because collaborative software requires traceable changes",analysis,prelabeled
+"Technical writing helps engineers explain tradeoffs to teammates and stakeholders",analysis,prelabeled
+"Internship applications should be customized around the skills each role emphasizes",analysis,prelabeled
+"Mock interviews expose gaps in both technical knowledge and verbal explanation",analysis,prelabeled
+"Cloud certifications can supplement experience but cannot replace demonstrated problem solving",analysis,prelabeled
+"Testing improves reliability by catching regressions before users encounter them",analysis,prelabeled
+"Code reviews work best when comments focus on correctness maintainability and shared standards",analysis,prelabeled
+"Distributed systems require careful thinking about failures latency and consistency",analysis,prelabeled
+"Students can learn more from one completed project than from many unfinished tutorials",analysis,prelabeled
+"Algorithms practice is useful when it is combined with understanding real system constraints",analysis,prelabeled
+"Version control history can show how a project evolved and how problems were resolved",analysis,prelabeled
+"An internship search may take months because hiring cycles vary across companies",analysis,prelabeled
+"Mentorship is valuable when feedback is specific timely and connected to career goals",analysis,prelabeled
+"Choosing electives should depend on interests and target roles rather than popularity alone",analysis,prelabeled
+"Debugging becomes easier when engineers reproduce failures and isolate one variable at a time",analysis,prelabeled
+"Technical interviews test communication as well as the ability to derive a solution",analysis,prelabeled
+"Machine learning roles often require statistics programming and domain knowledge together",analysis,prelabeled
+"Frontend work still benefits from algorithms accessibility testing and software design principles",analysis,prelabeled
+"Backend engineering requires attention to APIs security observability and data modeling",analysis,prelabeled
+"Academic performance can open doors but practical evidence helps sustain recruiter interest",analysis,prelabeled
+"Students should compare job offers using learning potential compensation location and stability",analysis,prelabeled
+"An effective study plan alternates learning concepts with solving unfamiliar problems",analysis,prelabeled
+"Internship experience is useful partly because it teaches how production constraints affect design",analysis,prelabeled
+"Open source contributions can demonstrate collaboration when the changes are substantial and clear",analysis,prelabeled
+"Recruiters often scan resumes quickly so structure and relevance affect first impressions",analysis,prelabeled
+"Software architecture decisions should account for future maintenance not only initial implementation",analysis,prelabeled
+"Time management matters because recruiting coursework and personal projects compete for attention",analysis,prelabeled
+"Strong fundamentals make it easier to learn unfamiliar libraries after joining a team",analysis,prelabeled
+"Interview rejection does not identify one cause because hiring decisions combine many signals",analysis,prelabeled
+"Professional experience can improve confidence by providing examples for behavioral interviews",analysis,prelabeled
+"A clear project README helps reviewers understand setup usage and design choices",analysis,prelabeled
+"Security should be considered during design instead of added only after a vulnerability appears",analysis,prelabeled
+"Performance optimization should begin with measurement rather than assumptions about bottlenecks",analysis,prelabeled
+"Recruiting advice should account for differences in geography immigration status and finances",analysis,prelabeled
+"Pair programming can accelerate learning when both participants actively explain their reasoning",analysis,prelabeled
+"Students benefit from applying to a range of companies instead of relying on one ideal employer",analysis,prelabeled
+"Career planning is iterative because interests and labor market conditions change over time",analysis,prelabeled
+"Strong references usually come from people who observed specific contributions and growth",analysis,prelabeled
+"Course grades and practical skills measure different aspects of preparation",analysis,prelabeled
+"An engineering manager evaluates how a candidate reasons about ambiguity and tradeoffs",analysis,prelabeled
+"Clear variable names reduce cognitive load for everyone maintaining a codebase",analysis,prelabeled
+"Internships are not the only path to experience because research and community projects can help",analysis,prelabeled
+"Graduates should track applications and follow ups to make a long search more manageable",analysis,prelabeled
+"The best specialization is often the one a student can sustain through genuine interest",analysis,prelabeled
+"A failed project can still be valuable when its lessons are documented and applied later",analysis,prelabeled
+"Code quality includes readability testing documentation and appropriate complexity",analysis,prelabeled
+"Campus organizations can provide leadership examples for behavioral interview discussions",analysis,prelabeled
+"Learning how to ask precise questions is an important engineering and workplace skill",analysis,prelabeled
+"Job descriptions are imperfect signals because companies use different names for similar work",analysis,prelabeled
+"An internship search strategy should include referrals direct applications and recruiter conversations",analysis,prelabeled
+"Students should evaluate whether a graduate program improves their target career outcomes",analysis,prelabeled
+"Technical growth usually comes from repeated feedback and increasingly difficult problems",analysis,prelabeled
+"Companies should publish realistic requirements so qualified students do not self select out",hot_take,prelabeled
+"The obsession with prestige makes students overlook excellent teams at less famous companies",hot_take,prelabeled
+"Many coding interviews reward memorized patterns more than practical engineering judgment",hot_take,prelabeled
+"A computer science degree is not automatically worth the debt for every student",hot_take,prelabeled
+"Recruiters should stop treating a missing internship as proof that a student lacks ability",hot_take,prelabeled
+"Students spend too much time polishing portfolios that nobody reads carefully",hot_take,prelabeled
+"Most tutorial projects are inflated on resumes and provide little evidence of original thinking",hot_take,prelabeled
+"Remote internships can be excellent when companies deliberately create mentoring structures",hot_take,prelabeled
+"Mandatory office attendance is often a management preference rather than an engineering necessity",hot_take,prelabeled
+"Leetcode preparation has become a second curriculum that disadvantages students with jobs",hot_take,prelabeled
+"Companies should pay interns enough to avoid excluding people who cannot work for free",hot_take,prelabeled
+"The entry level label is losing meaning when postings demand multiple internships",hot_take,prelabeled
+"Students should not feel obligated to learn every popular tool before applying",hot_take,prelabeled
+"College courses should teach debugging and collaboration more explicitly",hot_take,prelabeled
+"Many resume reviews focus on formatting while ignoring the quality of the underlying work",hot_take,prelabeled
+"Recruiting pipelines often confuse confidence with competence during interviews",hot_take,prelabeled
+"The best interview preparation is not memorizing solutions but learning to communicate uncertainty",hot_take,prelabeled
+"Big technology companies are not the only places where graduates can build strong careers",hot_take,prelabeled
+"Students should negotiate offers even when they believe their leverage is limited",hot_take,prelabeled
+"Career advice that ignores visa constraints is incomplete for many international students",hot_take,prelabeled
+"University career centers need stronger relationships with technical hiring teams",hot_take,prelabeled
+"Some coding assessments are designed more for filtering applicants than measuring real ability",hot_take,prelabeled
+"An impressive company name cannot compensate for a role with poor mentorship",hot_take,prelabeled
+"Students should prioritize sustainable learning over grinding interview problems every night",hot_take,prelabeled
+"Engineering culture matters more to long term growth than a flashy starting title",hot_take,prelabeled
+"Internships should include meaningful ownership rather than repetitive administrative tasks",hot_take,prelabeled
+"Companies that reject candidates without feedback waste an opportunity to improve the process",hot_take,prelabeled
+"A strong GPA deserves respect even though it does not predict every workplace skill",hot_take,prelabeled
+"Students are often told to network without being taught how to build genuine relationships",hot_take,prelabeled
+"Entry level candidates should be judged on growth potential instead of matching every requirement",hot_take,prelabeled
+"The current hiring slowdown has made normal career advice feel disconnected from reality",hot_take,prelabeled
+"Many job postings combine several roles and then offer one junior salary",hot_take,prelabeled
+"Open source can be more educational than another isolated portfolio clone",hot_take,prelabeled
+"Employers should explain interview stages clearly instead of surprising candidates with extra rounds",hot_take,prelabeled
+"Students need financial advice alongside technical advice when choosing a computer science path",hot_take,prelabeled
+"The fastest way to improve is often to finish and review work instead of constantly restarting",hot_take,prelabeled
+"Some bootcamp criticism is really criticism of weak marketing and unrealistic promises",hot_take,prelabeled
+"Interviewers should not penalize candidates for using reasonable documentation during practical tasks",hot_take,prelabeled
+"Career success is not a single ranking and students should define their own priorities",hot_take,prelabeled
+"Employers ask for passion while offering processes that make candidates feel disposable",hot_take,prelabeled
+"Students should be skeptical of advice from people who succeeded under completely different conditions",hot_take,prelabeled
+"Not every software role requires a computer science degree but many still benefit from its foundations",hot_take,prelabeled
+"Companies could improve hiring by replacing trivia questions with realistic debugging exercises",hot_take,prelabeled
+"The pressure to specialize too early prevents students from exploring what they enjoy",hot_take,prelabeled
+"Graduate school is sometimes used to postpone a difficult job market decision",hot_take,prelabeled
+"LinkedIn branding is less important than having people who can describe your work",hot_take,prelabeled
+"Students should not accept toxic behavior just because a company has a famous logo",hot_take,prelabeled
+"Career advice should acknowledge that luck affects timing and access to opportunities",hot_take,prelabeled
+"Many teams claim to value diversity but design hiring processes around narrow backgrounds",hot_take,prelabeled
+"The degree debate misses how much outcomes depend on cost support and individual goals",hot_take,prelabeled
+"Companies should make internships accessible to students outside major technology hubs",hot_take,prelabeled
+"Being early in a career is a reason to ask questions not a reason to hide confusion",hot_take,prelabeled
+"Technical interviews should allow multiple valid solutions when the reasoning is sound",hot_take,prelabeled
+"The industry needs fewer vague promises and more transparent salary and leveling information",hot_take,prelabeled
+"Students should avoid measuring their progress against highly curated posts online",hot_take,prelabeled
+"An internship is valuable even when the technology stack is not the one a student expected",hot_take,prelabeled
+"The safest career plan includes transferable skills instead of betting everything on one trend",hot_take,prelabeled
+"Some hiring managers overvalue speed when careful reasoning prevents expensive mistakes",hot_take,prelabeled
+"College can be worthwhile when students use its community resources instead of only attending lectures",hot_take,prelabeled
+"Job hunting burnout is a structural problem and not simply a motivation failure",hot_take,prelabeled
+"Companies should not expect free personal branding work from applicants",hot_take,prelabeled
+"The phrase culture fit is too often used to reward similarity rather than collaboration",hot_take,prelabeled
+"Students deserve clear rejection timelines after investing hours in take home assignments",hot_take,prelabeled
+"Recruiting would be fairer if employers measured practical skills with consistent rubrics",hot_take,prelabeled
+"That recruiter email was so vague that I have no idea what the role actually involves",reaction,prelabeled
+"I just spent three hours debugging a missing semicolon and feel defeated",reaction,prelabeled
+"Getting an internship interview after dozens of applications feels unreal",reaction,prelabeled
+"This rejection arrived five minutes after I finished the final round",reaction,prelabeled
+"I am tired of seeing another automated message with no useful feedback",reaction,prelabeled
+"My project finally passed all the tests and I can breathe again",reaction,prelabeled
+"That technical screen was much friendlier than I expected",reaction,prelabeled
+"I forgot the simplest data structure during the interview and immediately regretted it",reaction,prelabeled
+"Seeing classmates announce offers makes this search feel even more stressful",reaction,prelabeled
+"I am proud that I explained my approach instead of freezing during the interview",reaction,prelabeled
+"The internship application portal crashed right before the deadline",reaction,prelabeled
+"I cannot believe the company scheduled a fourth interview for an internship",reaction,prelabeled
+"Today was the first time a recruiter actually answered my question directly",reaction,prelabeled
+"My group project presentation went better than the weeks of preparation suggested",reaction,prelabeled
+"I am completely overwhelmed by finals and recruiting at the same time",reaction,prelabeled
+"That offer call was the best surprise of the semester",reaction,prelabeled
+"I keep refreshing my inbox even though I know the decision may take weeks",reaction,prelabeled
+"Finally finishing the operating systems assignment feels like a major victory",reaction,prelabeled
+"The interviewer said my explanation was clear and that made my entire day",reaction,prelabeled
+"I am frustrated that the posting disappeared before I could submit my application",reaction,prelabeled
+"My resume review uncovered mistakes I had stared at for months",reaction,prelabeled
+"I was so nervous that I introduced myself twice on the recruiting call",reaction,prelabeled
+"Receiving a referral from a former classmate made the search feel less lonely",reaction,prelabeled
+"I cannot decide whether this rejection hurts more than the silence before it",reaction,prelabeled
+"That take home assignment was actually interesting instead of exhausting",reaction,prelabeled
+"I am shocked that a small project from class started a useful conversation",reaction,prelabeled
+"The hiring manager remembered details from my portfolio and I felt encouraged",reaction,prelabeled
+"Another week without an offer has made me question everything",reaction,prelabeled
+"I celebrated passing the coding assessment with the cheapest coffee on campus",reaction,prelabeled
+"That mock interview exposed exactly the weakness I was avoiding",reaction,prelabeled
+"I am relieved that the internship location is close enough to afford",reaction,prelabeled
+"My first pull request was merged and I cannot stop smiling",reaction,prelabeled
+"The recruiter canceled at the last minute and I am annoyed",reaction,prelabeled
+"I finally understand recursion after struggling with it all month",reaction,prelabeled
+"Reading another post about effortless success made me feel behind",reaction,prelabeled
+"I got rejected from my dream company but the feedback was surprisingly kind",reaction,prelabeled
+"That group project meeting turned into an argument about a tiny naming decision",reaction,prelabeled
+"I am excited to learn a new stack during my first internship",reaction,prelabeled
+"The application asked for so many essays that I nearly gave up",reaction,prelabeled
+"I felt genuinely welcomed when the engineer explained the team structure",reaction,prelabeled
+"After months of searching I finally have a technical interview scheduled",reaction,prelabeled
+"That algorithm problem looked impossible until someone explained the key insight",reaction,prelabeled
+"I am disappointed but proud that I made it through the full interview loop",reaction,prelabeled
+"My laptop overheated during the online assessment and I nearly panicked",reaction,prelabeled
+"Getting useful advice from another student restored some confidence",reaction,prelabeled
+"I finished my capstone presentation and feel ready for a short break",reaction,prelabeled
