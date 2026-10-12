@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": false,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.7,
+    "f1_macro": 0.6020243846330803,
+    "per_label": {
+      "analysis": {
+        "precision": 0.5882352941176471,
+        "recall": 0.9090909090909091,
+        "f1": 0.7142857142857143,
+        "support": 11
+      },
+      "hot_take": {
+        "precision": 1.0,
+        "recall": 0.125,
+        "f1": 0.2222222222222222,
+        "support": 8
+      },
+      "reaction": {
+        "precision": 0.8333333333333334,
+        "recall": 0.9090909090909091,
+        "f1": 0.8695652173913043,
+        "support": 11
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "I forgot the simplest data structure during the interview and immediately regretted it",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Campus organizations can provide leadership examples for behavioral interview discussions",
+      "gold": "analysis",
+      "predicted": "reaction"
+    },
+    {
+      "text": "My group project presentation went better than the weeks of preparation suggested",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Strong references usually come from people who observed specific contributions and growth",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Security should be considered during design instead of added only after a vulnerability appears",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I cannot believe another recruiter listed five years of experience for a junior position",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "College prestige is overrated compared with consistent project work and strong communication",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "This semester has been exhausting but the systems project finally makes sense",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Career advice should acknowledge that luck affects timing and access to opportunities",
+      "gold": "hot_take",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Graduate school is sometimes used to postpone a difficult job market decision",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "College can be worthwhile when students use its community resources instead of only attending lectures",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I cannot believe the company scheduled a fourth interview for an internship",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "I am relieved to have accepted an internship before the semester ended",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "I keep refreshing my inbox even though I know the decision may take weeks",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Many job postings combine several roles and then offer one junior salary",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "That group project meeting turned into an argument about a tiny naming decision",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "The internship application portal crashed right before the deadline",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Career planning is iterative because interests and labor market conditions change over time",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "My resume review uncovered mistakes I had stared at for months",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Choosing electives should depend on interests and target roles rather than popularity alone",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Technical writing helps engineers explain tradeoffs to teammates and stakeholders",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Career fairs are more productive when students research companies before speaking with recruiters",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Course grades and practical skills measure different aspects of preparation",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Big technology companies are not the only places where graduates can build strong careers",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Clear variable names reduce cognitive load for everyone maintaining a codebase",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Open source can be more educational than another isolated portfolio clone",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Recruiting pipelines often confuse confidence with competence during interviews",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "That coding assessment went much better than I expected",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Machine learning roles often require statistics programming and domain knowledge together",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Learning how to ask precise questions is an important engineering and workplace skill",
+      "gold": "analysis",
+      "predicted": "analysis"
+    }
+  ]
+}

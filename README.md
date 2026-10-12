@@ -186,16 +186,16 @@ of next unit's variance. -->
 <!-- Both models on the same posts. `python baseline.py --trained results.json`
      prints this table for you. -->
 
-| Measure | Baseline | Trained | Difference |
-|---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Measure | Baseline |
+|---|---|
+| Overall accuracy | 0.700 |
+| Macro F1 | 0.602 |
+| F1 — `analysis` | 0.714 |
+| F1 — `hot_take` | 0.222 |
+| F1 — `reaction` | 0.870 |
 
 **What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
+prediciton: analysis
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
