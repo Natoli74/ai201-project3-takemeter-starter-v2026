@@ -172,6 +172,11 @@ The test split contained 10 `analysis`, 11 `hot_take`, and 8 `reaction` posts.
 **Pre-labelling disclosure:** The first 20 posts were labeled by hand. The
 AI-assisted rows were not accepted without human review.
 
+**Analysis assistance:** I used Copilot to review the before/after metrics,
+compare seed variation, and identify a targeted next step. I made the final
+decision to increase training from 3 to 5 epochs and verified the resulting
+artifacts myself.
+
 ---
 
 ## Execution Environment
@@ -293,13 +298,15 @@ the reverse direction occurred 3 times, so the model leaned toward
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
 **Criterion 5 diagnosis:** This is a measurement and model-evaluation
-limitation, not a labeling inconsistency. The available `results_three_seeds_before.json`
-reports `accuracy_most_confident_third`, but it does not report how many
-predictions had confidence at least 0.85 or their accuracy at that threshold.
-Therefore the required criterion cannot be established from this run. The
-100% staff agreement check (30/30) rules out labeling inconsistency as the
-cause of this unresolved result; a threshold-specific calibration evaluation is
-needed to decide whether the model actually meets the target.
+limitation, not a labeling inconsistency. The run reports accuracy for the
+most-confident third rather than the required 0.85 confidence threshold, so the
+criterion cannot be established. The 100% staff agreement check provides no
+evidence of labeling error; a threshold-specific calibration evaluation is
+needed.
+
+The four measurable performance criteria were met after retraining. The
+variation across seeds, especially before the improvement, is better explained
+by the small test samples for each label than by annotation inconsistency.
 
 ---
 
@@ -313,22 +320,18 @@ needed to decide whether the model actually meets the target.
 
 **Agreement rate:** 30 / 30 = 100%
 
-The agreement script found no disagreements, so there are no individual
-adjudications or piles (a), (b), or (c) to report.
+The perfect score shows that my application of the staff taxonomy matched the
+staff labels on all 30 posts, including its boundary cases. It supports the
+clarity and consistent application of these definitions on this check set, but
+it does not prove that every label in the larger dataset is correct.
 
 **Disagreements**
 
 None. I matched the staff label on all 30 posts.
 
-**What the pattern in my disagreements tells me:** The absence of disagreements
-suggests that I applied the staff definitions consistently on this set,
-including the difficult boundaries between load-bearing evidence and unsupported
-claims, and between general claims and immediate personal reactions. Because
-the staff set was intentionally small and selected for ambiguity, this is
-evidence of consistency on the check set, not proof that every label in my
-larger dataset is correct.
-
-
+**What the pattern in my disagreements tells me:** There were no disagreement
+patterns to diagnose, so labeling inconsistency is not supported as the cause
+of the model's remaining errors.
 
 ---
 
@@ -407,14 +410,14 @@ errors. The after-run improvement reduced this boundary error and improved
      SUBMISSION CHECKLIST — unit 6
 
        [x] Baseline vs. Trained table, with your prediction written beforehand
-       [ ] Run Log — Before, five criteria across three seeds
+       [x] Run Log — Before, five criteria across three seeds
        [x] Confusion matrix TYPED AS A MARKDOWN TABLE
        [x] A verdict on every criterion
        [x] A diagnosis for every miss, using the agreement report as evidence
        [x] Agreement Report with every disagreement adjudicated
-       [ ] One improvement, with Run Log — After
-       [ ] What's Still Broken
-       [ ] results_three_seeds_before.json, results_three_seeds_after.json,
+       [x] One improvement, with Run Log — After
+       [x] What's Still Broken
+       [x] results_three_seeds_before.json, results_three_seeds_after.json,
            baseline_results.json and
            agreement_results.json committed
        [x] At least four new commits
