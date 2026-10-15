@@ -238,6 +238,16 @@ Fine-tuning added meaningful but limited value: accuracy increased from 0.700 to
 Accuracy moved 0.069 across seeds. That is enough variation that a criterion
 landing within that band cannot confidently be called either met or missed.
 
+### Criterion results by seed
+
+| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
+|---|---|---:|---:|---:|---|
+| 1. Overall accuracy | ≥ 0.70 | 0.724 | 0.724 | 0.793 | **MET** |
+| 2. Macro F1 | ≥ 0.65 | 0.745 | 0.709 | 0.798 | **MET** |
+| 3. Reaction F1 | ≥ 0.55 | 1.000 | 0.933 | 0.857 | **MET** |
+| 4. Class balance | No label above 60% | 37.2% max | 37.2% max | 37.2% max | **MET** |
+| 5. High-confidence accuracy | ≥ 0.80 at confidence ≥ 0.85 | Not reported | Not reported | Not reported | **MISSED — not verifiable** |
+
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
@@ -266,11 +276,11 @@ the reverse direction occurred 3 times, so the model leaned toward
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy | ≥ 0.70 on every seed | **MET** | The three accuracies were 0.724, 0.724, and 0.793. |
+| 2 | Macro F1 | ≥ 0.65 on every seed | **MET** | The three macro F1 scores were 0.745, 0.709, and 0.798. |
+| 3 | Reaction F1 | ≥ 0.55 on every seed | **MET** | Reaction F1 was 1.000, 0.933, and 0.857. |
+| 4 | Class balance | No label above 60% | **MET** | The largest class is `hot_take` at 37.2% of the dataset. |
+| 5 | High-confidence accuracy | ≥ 0.80 when confidence is ≥ 0.85 | **MISSED — not verifiable** | The run reports accuracy for the most-confident third, not for the required 0.85 confidence threshold. |
 
 **Diagnoses**
 
@@ -282,8 +292,14 @@ the reverse direction occurred 3 times, so the model leaned toward
      ⚠️ Use your agreement report as evidence. It is the only instrument you
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
-
-
+**Criterion 5 diagnosis:** This is a measurement and model-evaluation
+limitation, not a labeling inconsistency. The available `results_three_seeds_before.json`
+reports `accuracy_most_confident_third`, but it does not report how many
+predictions had confidence at least 0.85 or their accuracy at that threshold.
+Therefore the required criterion cannot be established from this run. The
+100% staff agreement check (30/30) rules out labeling inconsistency as the
+cause of this unresolved result; a threshold-specific calibration evaluation is
+needed to decide whether the model actually meets the target.
 
 ---
 
@@ -372,17 +388,17 @@ learned:**
 
        [x] Baseline vs. Trained table, with your prediction written beforehand
        [ ] Run Log — Before, five criteria across three seeds
-       [ ] Confusion matrix TYPED AS A MARKDOWN TABLE
-       [ ] A verdict on every criterion
-       [ ] A diagnosis for every miss, using the agreement report as evidence
-       [ ] Agreement Report with every disagreement adjudicated
+       [x] Confusion matrix TYPED AS A MARKDOWN TABLE
+       [x] A verdict on every criterion
+       [x] A diagnosis for every miss, using the agreement report as evidence
+       [x] Agreement Report with every disagreement adjudicated
        [ ] One improvement, with Run Log — After
        [ ] What's Still Broken
        [ ] results_three_seeds_before.json, results_three_seeds_after.json,
            baseline_results.json and
            agreement_results.json committed
-       [ ] At least four new commits
-       [ ] The SAME repository URL as last unit
+       [x] At least four new commits
+       [x] The SAME repository URL as last unit
 
      Do not delete and recreate this repository.
      ═════════════════════════════════════════════════════════════════════ -->
