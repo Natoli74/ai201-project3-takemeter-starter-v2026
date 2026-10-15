@@ -334,21 +334,33 @@ larger dataset is correct.
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** Because the staff agreement check found no labeling
+disagreements, I used the allowed hyperparameter strategy and increased the
+training duration from 3 to 5 epochs. I then reran Section 6 with
+`RUN_LABEL = "after"` for seeds 42, 7, and 2024.
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** The agreement rate was 100%, so there was no
+evidence that relabeling would address the errors. The before-run results
+instead showed a model limitation at the `analysis`/`hot_take` boundary and
+noticeable seed variation, so additional training was a targeted attempt to
+improve convergence and stability.
 
 ### Run Log — After
 
-| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
-|---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| Criterion | Target | Before 42 | Before 7 | Before 2024 | After 42 | After 7 | After 2024 | Verdict |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| 1. Overall accuracy | ≥ 0.70 | 0.724 | 0.724 | 0.793 | 0.828 | 0.828 | 0.862 | **MET** |
+| 2. Macro F1 | ≥ 0.65 | 0.745 | 0.709 | 0.798 | 0.835 | 0.827 | 0.863 | **MET** |
+| 3. Reaction F1 | ≥ 0.55 | 1.000 | 0.933 | 0.857 | 1.000 | 1.000 | 0.857 | **MET** |
+| 4. Class balance | No label above 60% | 37.2% max | 37.2% max | 37.2% max | 37.2% max | 37.2% max | 37.2% max | **MET** |
+| 5. High-confidence accuracy | ≥ 0.80 at confidence ≥ 0.85 | Not reported | Not reported | Not reported | Not reported | Not reported | Not reported | **MISSED — not verifiable** |
 
-**Did it help, and how do I know:**
+**Did it help, and how do I know:** Yes. Compared with the before run, accuracy
+increased from 0.724, 0.724, and 0.793 to 0.828, 0.828, and 0.862, while
+macro F1 increased from 0.745, 0.709, and 0.798 to 0.835, 0.827, and 0.863.
+Accuracy spread also narrowed from 0.069 to 0.034, so five epochs improved
+both performance and stability. This is evidence that the original model
+needed more training, not that the labels were inconsistent.
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
@@ -361,13 +373,21 @@ larger dataset is correct.
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
-
+Criterion 5 remains unresolved because the evaluation records accuracy for the
+most-confident third rather than accuracy specifically among predictions with
+confidence at least 0.85. I would add a threshold-specific calibration
+calculation that reports the number of predictions at or above 0.85 and their
+accuracy; the 100% staff agreement check provides no evidence that labeling
+inconsistency caused this gap.
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
 
-
+The model learned the reaction boundary reliably, but it still confuses
+`analysis` and `hot_take`, as shown by the largest before-run off-diagonal
+errors. The after-run improvement reduced this boundary error and improved
+`analysis` and `hot_take` F1, but did not eliminate the underlying overlap.
 
 <!-- ═════════════════════════════════════════════════════════════════════
 
