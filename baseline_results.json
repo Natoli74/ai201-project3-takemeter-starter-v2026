@@ -1,164 +1,79 @@
 {
   "model": "facebook/bart-large-mnli",
-  "n": 30,
+  "n": 29,
   "seed": 42,
-  "held_out": false,
+  "held_out": true,
   "used_definitions": true,
   "scores": {
-    "n": 30,
-    "accuracy": 0.7,
-    "f1_macro": 0.6020243846330803,
+    "n": 29,
+    "accuracy": 0.6896551724137931,
+    "f1_macro": 0.6935143288084463,
     "per_label": {
       "analysis": {
-        "precision": 0.5882352941176471,
-        "recall": 0.9090909090909091,
-        "f1": 0.7142857142857143,
-        "support": 11
+        "precision": 0.5625,
+        "recall": 0.9,
+        "f1": 0.6923076923076923,
+        "support": 10
       },
       "hot_take": {
-        "precision": 1.0,
-        "recall": 0.125,
-        "f1": 0.2222222222222222,
-        "support": 8
+        "precision": 0.8333333333333334,
+        "recall": 0.45454545454545453,
+        "f1": 0.5882352941176471,
+        "support": 11
       },
       "reaction": {
-        "precision": 0.8333333333333334,
-        "recall": 0.9090909090909091,
-        "f1": 0.8695652173913043,
-        "support": 11
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "f1": 0.7999999999999999,
+        "support": 8
       }
     }
   },
   "predictions": [
     {
-      "text": "I forgot the simplest data structure during the interview and immediately regretted it",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Campus organizations can provide leadership examples for behavioral interview discussions",
+      "text": "Internships are not the only path to experience because research and community projects can help",
       "gold": "analysis",
       "predicted": "reaction"
     },
     {
-      "text": "My group project presentation went better than the weeks of preparation suggested",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Strong references usually come from people who observed specific contributions and growth",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Security should be considered during design instead of added only after a vulnerability appears",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "I cannot believe another recruiter listed five years of experience for a junior position",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "College prestige is overrated compared with consistent project work and strong communication",
+      "text": "An internship is valuable even when the technology stack is not the one a student expected",
       "gold": "hot_take",
       "predicted": "analysis"
     },
     {
-      "text": "This semester has been exhausting but the systems project finally makes sense",
+      "text": "I am disappointed but proud that I made it through the full interview loop",
       "gold": "reaction",
       "predicted": "reaction"
     },
     {
-      "text": "Career advice should acknowledge that luck affects timing and access to opportunities",
+      "text": "I got rejected from my dream company but the feedback was surprisingly kind",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Some bootcamp criticism is really criticism of weak marketing and unrealistic promises",
       "gold": "hot_take",
-      "predicted": "reaction"
+      "predicted": "hot_take"
     },
     {
-      "text": "Graduate school is sometimes used to postpone a difficult job market decision",
-      "gold": "hot_take",
-      "predicted": "analysis"
-    },
-    {
-      "text": "College can be worthwhile when students use its community resources instead of only attending lectures",
-      "gold": "hot_take",
-      "predicted": "analysis"
-    },
-    {
-      "text": "I cannot believe the company scheduled a fourth interview for an internship",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "I am relieved to have accepted an internship before the semester ended",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "I keep refreshing my inbox even though I know the decision may take weeks",
-      "gold": "reaction",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Many job postings combine several roles and then offer one junior salary",
+      "text": "Companies should pay interns enough to avoid excluding people who cannot work for free",
       "gold": "hot_take",
       "predicted": "analysis"
     },
     {
-      "text": "That group project meeting turned into an argument about a tiny naming decision",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "The internship application portal crashed right before the deadline",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Career planning is iterative because interests and labor market conditions change over time",
+      "text": "Internship experience is useful partly because it teaches how production constraints affect design",
       "gold": "analysis",
       "predicted": "analysis"
     },
     {
-      "text": "My resume review uncovered mistakes I had stared at for months",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Choosing electives should depend on interests and target roles rather than popularity alone",
+      "text": "Good resume bullets describe measurable outcomes rather than listing technologies",
       "gold": "analysis",
       "predicted": "analysis"
     },
     {
-      "text": "Technical writing helps engineers explain tradeoffs to teammates and stakeholders",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Career fairs are more productive when students research companies before speaking with recruiters",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Course grades and practical skills measure different aspects of preparation",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Big technology companies are not the only places where graduates can build strong careers",
+      "text": "Students should be skeptical of advice from people who succeeded under completely different conditions",
       "gold": "hot_take",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Clear variable names reduce cognitive load for everyone maintaining a codebase",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Open source can be more educational than another isolated portfolio clone",
-      "gold": "hot_take",
-      "predicted": "analysis"
+      "predicted": "hot_take"
     },
     {
       "text": "Recruiting pipelines often confuse confidence with competence during interviews",
@@ -166,17 +81,97 @@
       "predicted": "hot_take"
     },
     {
-      "text": "That coding assessment went much better than I expected",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Machine learning roles often require statistics programming and domain knowledge together",
+      "text": "Networking creates opportunities by increasing the number of conversations with potential mentors",
       "gold": "analysis",
       "predicted": "analysis"
     },
     {
-      "text": "Learning how to ask precise questions is an important engineering and workplace skill",
+      "text": "I cannot decide whether this rejection hurts more than the silence before it",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "The recruiter canceled at the last minute and I am annoyed",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "College can be worthwhile when students use its community resources instead of only attending lectures",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Students should avoid measuring their progress against highly curated posts online",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Most tutorial projects are inflated on resumes and provide little evidence of original thinking",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Remote internships can be excellent when companies deliberately create mentoring structures",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "A failed project can still be valuable when its lessons are documented and applied later",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "The best specialization is often the one a student can sustain through genuine interest",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "That technical screen was much friendlier than I expected",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Internship applications should be customized around the skills each role emphasizes",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I am frustrated that the posting disappeared before I could submit my application",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Companies should publish realistic requirements so qualified students do not self select out",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Companies that reject candidates without feedback waste an opportunity to improve the process",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Code reviews work best when comments focus on correctness maintainability and shared standards",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I am shocked that a small project from class started a useful conversation",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Seeing a rejection after the final round feels especially frustrating",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Students benefit from applying to a range of companies instead of relying on one ideal employer",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Cloud certifications can supplement experience but cannot replace demonstrated problem solving",
       "gold": "analysis",
       "predicted": "analysis"
     }

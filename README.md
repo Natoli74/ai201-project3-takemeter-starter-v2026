@@ -206,11 +206,11 @@ The run generated `results.json` and `test_split.csv` in the project folder.
 
 | Measure | Baseline |
 |---|---|
-| Overall accuracy | 0.700 |
-| Macro F1 | 0.602 |
-| F1 — `analysis` | 0.714 |
-| F1 — `hot_take` | 0.222 |
-| F1 — `reaction` | 0.870 |
+| Overall accuracy | 0.690 |
+| Macro F1 | 0.694 |
+| F1 — `analysis` | 0.692 |
+| F1 — `hot_take` | 0.588 |
+| F1 — `reaction` | 0.800 |
 
 **What I predicted before I looked:**
 prediciton: analysis
